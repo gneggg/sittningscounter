@@ -1,11 +1,17 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import Drink from './components/drink';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      
+      <Drink name="Öl" />
+      <Drink name="Cider" />
+      <Drink name="Alkoholfri öl" />
+      <Drink name="Alkoholfri cider" />
+      <Drink name="Läsk" /> 
+
     </View>
   );
 }
